@@ -1,0 +1,130 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Genos&display=swap');
+
+
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+
+    font-family: 'Genos', sans-serif;
+}
+
+header {
+    /* border: 2px solid red; */
+
+    width: 800px;
+    height: 200px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+    background: rgb(90, 90, 147);
+    color: white;
+}
+
+header img {
+    width: 150px;
+    border-radius: 100px;
+}
+
+nav {
+    /* border: 2px solid red; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+    width: 800px;
+    margin: 0 auto;
+    height: 250px;
+    margin-bottom: 30px;
+    
+    background-color: black;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+nav a:hover {
+    color: goldenrod;
+}
+
+main h2 {
+    /* border: 2px solid orange;  */
+    border-bottom: 1px solid darkgray;
+    
+    width: 680px;
+    margin: 0 auto;
+
+    text-align: center;
+    grid-column: 1/4;
+    margin-bottom: 10px;
+}  
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 700px 1fr;
+    grid-template-rows: 1fr auto auto;
+
+    gap: 15px;
+
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100%;
+    min-height: 300px;
+
+    grid-column: 2/3;
+    text-align: center;
+}
+
+.card ul, .card ul a {
+    text-align: left;
+    text-decoration: none;
+    list-style: none;
+}
+
+.card div {
+    /* border: 2px solid purple; */
+    height: 50px;
+    margin-top: 0px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+
+    background: rgb(90, 90, 147);
+    color: white;
+    font-size: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 800px;
+    min-height: 150px;
+    margin: 0 auto;
+    margin-top: 20px;
+
+    background: rgb(90, 90, 147);
+}
