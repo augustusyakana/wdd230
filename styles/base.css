@@ -105,6 +105,10 @@ main {
     list-style: none;
 }
 
+.card ul li {
+    margin-top: 10px;
+}
+
 .card ul a:hover {
     color: goldenrod;
 }
