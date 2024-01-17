@@ -20,14 +20,3 @@ section {
     padding: 1em;
     background: #ffff;
 }
-
-@media screen and (min-width: 500px) {
-    header {
-        background: black;
-        color: white;
-    }
-
-    main {
-        grid-template-columns: 1fr 1fr;
-    }
-}
