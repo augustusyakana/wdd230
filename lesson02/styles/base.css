@@ -28,7 +28,7 @@ header {
     align-items: center;
     height: 7rem;
     max-width: 100%;
-    min-width: max-content;
+    min-width: min-content;
     margin-top: -25px;
     background: black;
     color: inherit;
