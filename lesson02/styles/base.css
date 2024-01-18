@@ -1,0 +1,103 @@
+body {
+    background: linear-gradient(
+        to right,
+        rgba(255, 0, 0, 0.705),
+        rgba(0, 0, 255, 0.705),
+        rgba(255, 166, 0, 0.709)
+    );
+    margin: 0;
+    padding: 0;
+    color: white;
+    min-height: 100vh;
+    font-family: 'Raleway', sans-serif;
+}
+
+body h1, body h2, body h3 {
+    font-family: 'Salsa', cursive;
+}
+
+header h1, header h2 {
+    font-family: 'Raleway', sans-serif;
+    margin: 10px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 7rem;
+    max-width: 100%;
+    min-width: max-content;
+    margin-top: -25px;
+    background: black;
+    color: inherit;
+    margin: 0;
+    text-align: center;
+    padding: 30px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom: 1px solid white;
+}
+
+main {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2em;
+}
+
+.card p {
+    text-align: left;
+    font-size: 18px;
+}
+
+.cardTitle {
+    font-size: 20px;
+    border-bottom: 2px solid grey;
+    margin-bottom: 2em;
+}
+
+.companyInfo a {
+    text-decoration: none;
+    color: orange;
+}
+
+.companyInfo {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 2em;
+}
+
+.card {
+    border: 1px solid rgba(31, 28, 28, 0.27);
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.745);
+    backdrop-filter: blur(100px);
+    max-width: 90%;
+    margin: 0 auto;
+
+    text-align: center;
+    padding: 5px;
+}
+
+.card img {
+    max-width: 90%;
+    align-self: center;
+    border: 1px solid rgba(255, 255, 255, 0.602);
+    border-radius: 20px;
+}
+
+.description {
+    width: 90%;
+    margin: 0 auto;
+}
+
+footer {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.745);
+    border-top: 1px solid white;
+    height: 50px;
+    text-align: center;
+}
