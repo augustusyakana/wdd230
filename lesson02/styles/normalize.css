@@ -1,0 +1,19 @@
+html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    color-scheme: light;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: block;
+}
+
+img, picture, svg, video {
+    max-width: 100%;
+}
