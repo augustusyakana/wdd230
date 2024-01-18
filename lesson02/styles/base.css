@@ -99,7 +99,8 @@ footer {
     background: rgba(0, 0, 0, 0.745);
     border-top: 1px solid white;
     height: 90px;
-    max-height: max-content;
+    min-height: max-content;
+    max-height: 100px;
     text-align: center;
 }
 
