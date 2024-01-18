@@ -98,6 +98,11 @@ footer {
     width: 100%;
     background: rgba(0, 0, 0, 0.745);
     border-top: 1px solid white;
-    height: 50px;
+    height: 90px;
+    max-height: max-content;
     text-align: center;
+}
+
+#lastModified {
+    font-size: 14px;
 }
