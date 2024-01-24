@@ -193,8 +193,8 @@ footer {
     margin: 0 auto;
     margin-top: 20px;
 
-    background: rgb(90, 90, 147);
-    color: white;
+    background: rgb(97, 138, 48);
+    color: black;
     font-size: 14px;
     padding: 10px;
 }
@@ -204,6 +204,6 @@ footer p {
 }
 
 #lastModified {
-    color: white;
+    color: black;
     font-size: 12px;
 }
