@@ -5,3 +5,8 @@ menuBtn.addEventListener('click', () => {
     nav.classList.toggle('show');
     menuBtn.classList.toggle('show');
 })
+
+menuBtn.addEventListener('touch', () => {
+    nav.classList.toggle('show');
+    menuBtn.classList.toggle('show');
+})
