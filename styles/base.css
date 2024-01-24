@@ -23,7 +23,7 @@ header {
     align-items: center;
     gap: 50px;
 
-    background: rgb(97, 138, 48);
+    background: rgb(198, 186, 52);
     color: black;
 }
 
@@ -93,7 +93,7 @@ nav a {
 }
 
 #menu.show {
-    background: rgb(97, 138, 48);
+    background: rgb(198, 186, 52);
     text-shadow: 1px 3px 5px black;
 }
 
@@ -173,7 +173,7 @@ iframe {
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
 
-    background: rgb(97, 138, 48);
+    background: rgb(198, 186, 52);
     color: black;
     font-size: 20px;
 
@@ -193,9 +193,10 @@ footer {
     margin: 0 auto;
     margin-top: 20px;
 
-    background: rgb(97, 138, 48);
+    background: rgb(198, 186, 52);
     color: black;
-    font-size: 14px;
+    font-weight: bold;
+    font-size: 18px;
     padding: 10px;
 }
 
@@ -205,5 +206,6 @@ footer p {
 
 #lastModified {
     color: black;
-    font-size: 12px;
+    font-size: 16px;
+    font-weight: bold;
 }
