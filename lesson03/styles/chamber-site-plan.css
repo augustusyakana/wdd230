@@ -316,3 +316,34 @@ main {
     font-family: var(--cursive-font);
     font-size: 35px;
 }
+
+#wireframe {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 3px solid grey;
+    border-radius: 30px;
+
+    background: var(--background2);
+    padding: 20px;
+
+    text-align: center;
+}
+
+#wireframe img {
+    width: 100%;
+
+    border: 2px solid black;
+}
+
+footer {
+    background: var(--background1);
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    color: var(--white-font);
+}
