@@ -56,12 +56,11 @@ p { font-family: var(--ParaFont); }
     width: 1em;
     font-size: 60px;
     text-align: center;
-    height: 50px;
+    height: 100px;
     color: #f8f8ffff;
     align-content: baseline;
     text-decoration: none;
     /* border: 2px solid red; */
-    margin-bottom: -90px;
 
 }
 
@@ -117,7 +116,7 @@ nav button {
 
 #menu-btn.show::before {
     content: "︽";
-    margin-top: -30px;
+    margin-top: -80px;
 }
 
 header {
