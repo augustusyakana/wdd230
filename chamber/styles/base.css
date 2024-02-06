@@ -31,10 +31,15 @@ p { font-family: var(--ParaFont); }
 
 #logo {
     text-align: left;
+    width: 50%;
 }
 
 #logo img {
     width: 80%;
+}
+
+#logo:hover {
+    transform: scale(1.1);
 }
 
 #header-panel {

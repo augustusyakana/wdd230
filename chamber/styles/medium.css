@@ -65,6 +65,15 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    #menu-btn {
+        display: none;
+        pointer-events: none;
+        position: relative;
+        z-index: 1;
+        margin-top: -100%;
+        
+    }
+
     #spotlights h2 {
         grid-column: 1/3;
     }
