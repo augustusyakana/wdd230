@@ -98,7 +98,7 @@ nav a {
 }
 
 #menu.show::before {
-    content: "☓";
+    content: " ☓";
 }
 
 nav a:hover {

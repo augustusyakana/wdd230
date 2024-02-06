@@ -1,0 +1,148 @@
+:root {
+
+    /* Font Colors */
+    --special-font: #eca400;
+    --black-font: #3d0c02ff;
+    --white-font: #f8f8ffff;
+    
+    /* Background Colors */
+    --background1: #003A52;
+    --background2: #8DAA9D;
+    
+    --HeadingFont: 'Hedvig Letters Serif', Serif;
+    --ParaFont: 'Montserrat', sans-serif;
+    --cursive-font: 'Dynalight', cursive;
+    
+    }
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    min-width: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#logo {
+    text-align: left;
+}
+
+#logo img {
+    width: 80%;
+}
+
+#header-panel {
+    background: rgb(0, 58, 82, 0.7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+
+    font-family: var(--HeadingFont);
+
+}
+
+#menu-btn::before {
+    content: "︾";
+}
+
+#menu-btn {
+    width: 1em;
+    font-size: 60px;
+    text-align: center;
+    height: 50px;
+    color: #f8f8ffff;
+    align-content: baseline;
+    text-decoration: none;
+    /* border: 2px solid red; */
+
+}
+
+nav {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 25px;
+    position: fixed;
+    z-index: 3;
+
+    background: var(--background2);
+    font-family: var(--HeadingFont);
+
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--black-font);
+    font-family: var(--HeadingFont);
+}
+
+nav a:hover {
+    background: var(--background1);
+}
+
+nav button {
+    width: 5em;
+    height: 2em;
+    border: none;
+    border-radius: 30px;
+    background: var(--background1);
+
+    font-size: 1.6rem;
+    color: var(--white-font);
+    margin-top: 20px;
+    font-family: var(--HeadingFont);
+}
+
+.show {
+    display: flex;
+}
+
+#menu-btn.show::before {
+    content: "︽";
+    margin-top: -30px;
+}
+
+header {
+    background-image: url(/chamber/images/sokehs-rock.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+
+    text-align: center;
+    font-family: var(--HeadingFont);
+    color: var(--white-font);
+}
+
+header h1 {
+    padding: 10px;
+    text-shadow: 5px 5px 10px black;
+    font-size: 42px;
+    z-index: 2;
+    position: relative;
+}
+
+header button {
+    width: 5em;
+    height: 2em;
+    border: none;
+    border-radius: 30px;
+    background: var(--background1);
+
+    font-size: 1.6rem;
+    color: var(--white-font);
+    margin-top: 20px;
+    font-family: var(--HeadingFont);
+    position: relative;
+    z-index: 2;
+}
