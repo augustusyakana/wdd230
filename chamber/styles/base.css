@@ -60,6 +60,7 @@ body {
     align-content: baseline;
     text-decoration: none;
     /* border: 2px solid red; */
+    margin-bottom: -90px;
 
 }
 
@@ -76,18 +77,19 @@ nav {
 
     background: var(--background2);
     font-family: var(--HeadingFont);
-
 }
 
 nav a {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 30px;
     color: var(--black-font);
     font-family: var(--HeadingFont);
+    
 }
 
 nav a:hover {
-    background: var(--background1);
+    transform: scale(1.1);
+    text-shadow: 5px 5px 10px var(--background1);
 }
 
 nav button {
@@ -101,10 +103,11 @@ nav button {
     color: var(--white-font);
     margin-top: 20px;
     font-family: var(--HeadingFont);
+    
 }
 
 .show {
-    display: flex;
+    display: flex; 
 }
 
 #menu-btn.show::before {
@@ -117,7 +120,9 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 500px;
+    min-height: fit-content;
+    height: 530px;
+    
 
     text-align: center;
     font-family: var(--HeadingFont);
@@ -146,3 +151,57 @@ header button {
     position: relative;
     z-index: 2;
 }
+
+header button:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 10px black;
+}
+
+main {
+    margin-top: -16px;
+    padding: 15px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+#purpose {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+
+    font-family: var(--ParaFont);
+    font-size: 20px;
+}
+
+.card {
+    border: 2px solid grey;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: var(--background2);
+    border-radius: 30px;
+    text-align: center;
+    font-family: var(--ParaFont);
+
+}
+
+#currentEvents h2 {
+    font-family: var(--HeadingFont);
+    margin-bottom: -25px;
+}
+
+.event {
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    background: rgb(220, 220, 216);
+    font-size: 18px;
+}
+
+#test {
+    background: var(--background1);
+}
+
