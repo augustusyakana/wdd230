@@ -15,13 +15,18 @@
     
     }
 
+* {
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
+
 }
 
 body {
     min-height: 100vh;
-    min-width: none;
+    min-width: 100vw;
     margin: 0;
     padding: 0;
 }
@@ -70,18 +75,21 @@ p { font-family: var(--ParaFont); }
 }
 
 #small-nav {
-    width: 100%;
+
     display: none;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    padding: 25px;
-    position: fixed;
-    z-index: 3;
+    position: absolute;
+    z-index: 1;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
     background: var(--background2);
     font-family: var(--HeadingFont);
+    transition: ease-in-out 2s;
 }
 
 #medium-nav {
@@ -93,8 +101,21 @@ nav a {
     font-size: 30px;
     color: var(--black-font);
     font-family: var(--HeadingFont);
-    
+
 }
+
+nav a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: white;
+    transition: 0.5s ease-in-out;
+}
+
+nav a:hover::after {width: 100%;}
 
 nav a:hover {
     transform: scale(1.1);
@@ -112,7 +133,11 @@ nav button {
     color: var(--white-font);
     margin-top: 20px;
     font-family: var(--HeadingFont);
-    
+}
+
+.show:focus {
+    height: 100%;
+    transition: ease-in-out 2s;
 }
 
 #small-nav.show {
@@ -131,7 +156,7 @@ header {
     background-size: cover;
     min-height: fit-content;
     height: 530px;
-    
+    position: relative;
 
     text-align: center;
     font-family: var(--HeadingFont);
@@ -142,7 +167,7 @@ header h1 {
     padding: 10px;
     text-shadow: 5px 5px 10px black;
     font-size: 42px;
-    z-index: 2;
+    z-index: 0;
     position: relative;
 }
 
@@ -158,7 +183,7 @@ header button {
     margin-top: 20px;
     font-family: var(--HeadingFont);
     position: relative;
-    z-index: 2;
+    z-index: 0;
 }
 
 header button:hover {
@@ -217,6 +242,7 @@ main {
     background: rgb(220, 220, 216);
     font-size: 18px;
     color: black;
+    text-align: center;
 }
 
 #test {
@@ -224,8 +250,10 @@ main {
 }
 
 .sub-card img {
-    width: 100%;
+    width: 50%;
     border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 20px;
 }
 
 #spotlights .sub-card {
