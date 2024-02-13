@@ -4,16 +4,16 @@
     --special-font: #eca400;
     --black-font: #3d0c02ff;
     --white-font: #f8f8ffff;
-    
+
     /* Background Colors */
     --background1: #003A52;
     --background2: #8DAA9D;
-    
+
     --HeadingFont: 'Hedvig Letters Serif', Serif;
     --ParaFont: 'Montserrat', sans-serif;
     --cursive-font: 'Dynalight', cursive;
-    
-    }
+
+}
 
 @media screen and (min-width: 900px) {
     #logo img {
@@ -29,8 +29,8 @@
         justify-content: center;
         align-items: center;
         gap: 30px;
-        
-        
+
+
         font-family: var(--HeadingFont);
     }
 
@@ -71,7 +71,7 @@
         position: relative;
         z-index: 1;
         margin-top: -100%;
-        
+
     }
 
     #spotlights h2 {
@@ -80,17 +80,26 @@
 
     footer {
         padding: 10px;
+
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    footer img {
+        width: 50%;
     }
 
     #contact {
         width: 100%;
         padding-left: 15px;
         padding-right: 10px;
+        border-right: 1px solid grey;
+        text-align: center;
     }
 
     #copyright-info {
         width: 100%;
         padding-right: 15px;
-        
+
     }
 }

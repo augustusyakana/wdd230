@@ -4,16 +4,16 @@
     --special-font: #eca400;
     --black-font: #3d0c02ff;
     --white-font: #f8f8ffff;
-    
+
     /* Background Colors */
     --background1: #003A52;
     --background2: #8DAA9D;
-    
+
     --HeadingFont: 'Hedvig Letters Serif', Serif;
     --ParaFont: 'Montserrat', sans-serif;
     --cursive-font: 'Dynalight', cursive;
-    
-    }
+
+}
 
 * {
     box-sizing: border-box;
@@ -31,12 +31,20 @@ body {
     padding: 0;
 }
 
-h1, h2, h3, h4 { font-family: var(--HeadingFont); }
-p { font-family: var(--ParaFont); }
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--HeadingFont);
+}
+
+p {
+    font-family: var(--ParaFont);
+}
 
 #logo {
     text-align: left;
-    width: 50%;
+    width: 70%;
 }
 
 #logo img {
@@ -64,9 +72,8 @@ p { font-family: var(--ParaFont); }
 
 #menu-btn {
     width: 1em;
-    font-size: 60px;
+    font-size: 40px;
     text-align: center;
-    height: 100px;
     color: #f8f8ffff;
     align-content: baseline;
     text-decoration: none;
@@ -92,6 +99,11 @@ p { font-family: var(--ParaFont); }
     transition: ease-in-out 2s;
 }
 
+#mode {
+    font-size: 40px;
+    margin-top: 20px;
+}
+
 #medium-nav {
     display: none;
 }
@@ -115,7 +127,9 @@ nav a::after {
     transition: 0.5s ease-in-out;
 }
 
-nav a:hover::after {width: 100%;}
+nav a:hover::after {
+    width: 100%;
+}
 
 nav a:hover {
     transform: scale(1.1);
@@ -141,7 +155,7 @@ nav button {
 }
 
 #small-nav.show {
-    display: flex; 
+    display: flex;
 }
 
 #menu-btn.show::before {
@@ -199,12 +213,10 @@ main {
     grid-template-columns: 1fr;
     gap: 15px;
 
-    background: linear-gradient(
-        to right,
-        rgb(20, 72, 20),
-        black,
-        rgb(20, 72, 20)
-    );
+    background: linear-gradient(to right,
+            rgb(81, 220, 81),
+            white,
+            rgb(81, 220, 81));
 
     padding-bottom: 30px;
 }
@@ -214,7 +226,7 @@ main {
     margin: 0 auto;
     text-align: center;
     font-size: 20px;
-    color: white;
+    color: black;
 }
 
 .card {
@@ -223,11 +235,11 @@ main {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    background: var(--background1);
+    background: var(--background2);
     border-radius: 30px;
     text-align: center;
     font-family: var(--ParaFont);
-    color: white;
+    color: black;
 }
 
 #currentEvents h2 {
@@ -239,7 +251,7 @@ main {
     border: 2px solid black;
     padding: 15px;
     border-radius: 10px;
-    background: rgb(220, 220, 216);
+    background: white;
     font-size: 18px;
     color: black;
     text-align: center;
@@ -271,14 +283,15 @@ main {
 
 footer {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    align-items: start;
+    align-items: center;
 
     padding: 10px;
-    background: var(--background1);
+    background: var(--background2);
     margin-top: -5px;
 
-    color: var(--white-font);
+    color: var(--black-font);
 }
 
 #contact {
@@ -286,9 +299,13 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
-    border-right: 1px solid grey;
+    align-items: left;
     padding-right: 10px;
+    font-size: 18px;
+}
+
+#contact img {
+    margin-bottom: 20px;
 }
 
 #contact p {
@@ -296,8 +313,8 @@ footer {
 }
 
 #copyright-info {
-    text-align: right;
-    
+    text-align: center;
+    font-size: 18px;
 }
 
 #last-modified {
