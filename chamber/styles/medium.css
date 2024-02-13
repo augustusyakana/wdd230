@@ -24,28 +24,34 @@
         content: '';
     }
 
-    #medium-nav {
+    #small-nav {
         display: flex;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
         gap: 30px;
-
-
+        position: static;
+        background: none;
+        transition: none;
         font-family: var(--HeadingFont);
     }
 
-    #medium-nav a {
+    #mode {
+        margin-top: -10px;
+    }
+
+    #small-nav a {
         font-size: 20px;
         color: white;
         text-shadow: 5px 5px 10px black;
         text-decoration: none;
     }
 
-    #medium-nav a:hover {
+    #small-nav a:hover {
         color: var(--special-font);
     }
 
-    #medium-nav button {
+    #small-nav button {
         margin-top: -3px;
         margin-left: 20px;
     }

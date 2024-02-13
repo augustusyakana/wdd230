@@ -90,9 +90,11 @@ p {
     align-items: center;
     gap: 20px;
     position: absolute;
+    top: 23%;
     z-index: 1;
     padding-top: 20px;
     padding-bottom: 20px;
+    left: 0;
 
     background: var(--background2);
     font-family: var(--HeadingFont);
