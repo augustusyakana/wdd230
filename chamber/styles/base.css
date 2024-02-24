@@ -90,7 +90,7 @@ p {
     align-items: center;
     gap: 20px;
     position: absolute;
-    top: 23%;
+    top: 21%;
     z-index: 1;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -139,7 +139,7 @@ nav a:hover {
 }
 
 nav button {
-    width: 5em;
+    width: 5.5em;
     height: 2em;
     border: none;
     border-radius: 30px;
@@ -153,7 +153,6 @@ nav button {
 
 .show:focus {
     height: 100%;
-    transition: ease-in-out 2s;
 }
 
 #small-nav.show {
@@ -166,12 +165,13 @@ nav button {
 }
 
 header {
-    background-image: url(../images/sokehsRock.jpeg);
+    /* background-image: url(../images/sokehsRock.jpeg); */
+    /* background-image: url(../images/wdd230-org.jpg); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: fit-content;
-    height: 530px;
+    /* height: 530px; */
     position: relative;
 
     text-align: center;
@@ -182,9 +182,10 @@ header {
 header h1 {
     padding: 10px;
     text-shadow: 5px 5px 10px black;
-    font-size: 42px;
+    font-size: 30px;
     z-index: 0;
-    position: relative;
+    position: absolute;
+    color: white;
 }
 
 header button {
@@ -198,8 +199,6 @@ header button {
     color: var(--white-font);
     margin-top: 20px;
     font-family: var(--HeadingFont);
-    position: relative;
-    z-index: 0;
 }
 
 header button:hover {
@@ -207,8 +206,36 @@ header button:hover {
     box-shadow: 5px 5px 10px black;
 }
 
+#hero {
+    width: 100%;
+    position: relative;
+}
+
+#hero h1 {
+    position: absolute;
+    top: 0%;
+
+    margin-bottom: 50px;
+}
+
+#hero picture img {
+    width: 100vw;
+    height: auto;
+    position: relative;
+    z-index: -1;
+}
+
+#hero button {
+    position: absolute;
+    z-index: 0;
+    top: 70%;
+    left: 50%;
+    margin: 0 auto;
+    margin-left: -50px;
+}
+
 main {
-    margin-top: -16px;
+    margin-top: -10px;
     padding: 15px;
 
     display: grid;

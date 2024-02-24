@@ -109,3 +109,17 @@
 
     }
 }
+
+@media screen and (min-width: 631px) {
+    header h1 {
+        left: 40%;
+        margin-left: -220px;
+    }
+}
+
+@media screen and (min-width: 754px) {
+    header h1 {
+        color: var(--black-font);
+        text-shadow: 5px 5px 10px var(--background1);
+    }
+}
