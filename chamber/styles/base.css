@@ -57,6 +57,7 @@ p {
 
 #header-panel {
     background: rgb(0, 58, 82, 0.7);
+    height: 150px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -90,7 +91,7 @@ p {
     align-items: center;
     gap: 20px;
     position: absolute;
-    top: 21%;
+    top: 150px;
     z-index: 1;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -98,7 +99,6 @@ p {
 
     background: var(--background2);
     font-family: var(--HeadingFont);
-    transition: ease-in-out 2s;
 }
 
 #mode {
@@ -161,7 +161,7 @@ nav button {
 
 #menu-btn.show::before {
     content: "︽";
-    margin-top: -80px;
+    position: relative;
 }
 
 header {
@@ -216,6 +216,20 @@ header button:hover {
     top: 0%;
 
     margin-bottom: 50px;
+}
+
+#dis-hero img {
+    width: 100%;
+    position: relative;
+    z-index: -1;
+
+    margin-top: -15%;
+}
+
+#discover #purpose {
+    margin-top: 20px;
+    font-size: 35px;
+    margin-bottom: 20px;
 }
 
 #hero picture img {
@@ -348,4 +362,34 @@ footer {
 
 #last-modified {
     font-size: 14px;
+}
+
+#discover-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#demographics {
+    gap: 0;
+    text-align: left;
+}
+
+
+
+.dem-category {
+    font-size: 16px;
+}
+
+.discover-card h3 {
+    text-align: center;
+    font-size: 22px;
+}
+
+.discover-card {
+    font-size: 14px;
+}
+
+.discover-card p:nth-child(2) {
+    font-size: 18px;
 }
