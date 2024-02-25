@@ -17,9 +17,9 @@ btn.addEventListener('click', () => {
             list.removeChild(li);
             inputEl.focus;
         })
-        
+
         inputEl.value = '';
     }
 
-    
+
 })
