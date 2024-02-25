@@ -19,6 +19,9 @@ btn.addEventListener('click', () => {
 
         inputEl.value = '';
         inputEl.focus();
+    } else {
+        alert('Please enter Book name & Chapter number');
+        inputEl.focus();
     }
 })
 
