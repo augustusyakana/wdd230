@@ -11,6 +11,7 @@ const subcard = document.querySelectorAll('.sub-card');
 const purposeStatement = document.querySelector('#purpose');
 const footer = document.querySelector('footer');
 const gallery = document.querySelector('#gallery');
+const memberPara = document.querySelector('#become-member')
 
 menuBtn.addEventListener('click', () => {
     menu.classList.toggle('show');
@@ -28,6 +29,7 @@ modeBtn.addEventListener('click', () => {
         main.style.color = 'white';
         purposeStatement.style.color = 'white';
         gallery.style.color = 'black';
+        memberPara.style.color = 'white';
         modeBtn.textContent = "☀️"
 
         card.forEach((item) => item.style.background = "#003A52")
@@ -39,6 +41,7 @@ modeBtn.addEventListener('click', () => {
         footer.style.background = '#8DAA9D';
         footer.style.color = 'black';
         modeBtn.textContent = '🌙';
+        memberPara.style.color = 'black';
 
         card.forEach((item) => item.style.background = "#8DAA9D")
         card.forEach((item) => item.style.color = 'black')
