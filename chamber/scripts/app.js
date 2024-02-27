@@ -10,6 +10,7 @@ const card = document.querySelectorAll('.card');
 const subcard = document.querySelectorAll('.sub-card');
 const purposeStatement = document.querySelector('#purpose');
 const footer = document.querySelector('footer');
+const gallery = document.querySelector('#gallery');
 
 menuBtn.addEventListener('click', () => {
     menu.classList.toggle('show');
@@ -26,6 +27,7 @@ modeBtn.addEventListener('click', () => {
         footer.style.color = 'white';
         main.style.color = 'white';
         purposeStatement.style.color = 'white';
+        gallery.style.color = 'black';
         modeBtn.textContent = "☀️"
 
         card.forEach((item) => item.style.background = "#003A52")

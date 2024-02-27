@@ -378,7 +378,7 @@ footer {
 
 
 .dem-category {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .discover-card h3 {
@@ -387,9 +387,102 @@ footer {
 }
 
 .discover-card {
-    font-size: 14px;
+    font-size: 16px;
 }
 
-.discover-card p:nth-child(2) {
+#demographics p:nth-child(2) {
     font-size: 18px;
+}
+
+#sb-insights {
+    text-align: left;
+    font-size: 16px;
+}
+
+#sb-insights .percentage {
+    font-size: 35px;
+}
+
+.discover-card button {
+    height: 40px;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    margin: 0 auto;
+
+    background: var(--background1);
+    color: white;
+}
+
+#news .article {
+    border: 5px dotted grey;
+    padding: 15px;
+
+}
+
+#news h5 {
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+#news p {
+    font-size: 13px;
+    margin-top: -25px;
+}
+
+#news button {
+    margin-top: 30px;
+    background: var(--background1);
+    color: white;
+}
+
+#gallery img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+#gallery img:hover {
+    transform: scale(1.1);
+    z-index: -1;
+    transition: ease-in 2ms;
+}
+
+.photo-container {
+    position: relative;
+}
+
+.photo-container p {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    text-align: center;
+    background-color: white;
+    width: max-content;
+    padding: 5px;
+}
+
+#learn-more {
+    height: 40px;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    margin: 0 auto;
+
+    background: var(--background1);
+    color: white;
+    font-family: var(--HeadingFont);
+}
+
+#learn-more:hover {
+    transform: scale(1.1);
+    background: var(--background2);
+    border: 6px solid var(--background1);
+    color: black;
+}
+
+#become-member {
+    margin: 0 auto;
+    text-align: center;
 }
