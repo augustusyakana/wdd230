@@ -364,6 +364,13 @@ footer {
     font-size: 14px;
 }
 
+#visits-container {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #discover-sidebar {
     display: flex;
     flex-direction: column;
