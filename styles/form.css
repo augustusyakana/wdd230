@@ -1,0 +1,93 @@
+#formmessage {
+    display: block;
+    visibility: none;
+    font-size: 30px;
+    color: red;
+    text-align: left;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+form {
+    width: 100%;
+}
+
+.form fieldset {
+    margin: 2rem 0;
+    border: 1px solid rgb(201, 201, 254);
+    border-radius: 10px;
+    padding: .9rem;
+}
+
+.form legend {
+    color: rgb(69, 69, 177);
+    padding: .6rem;
+}
+
+.form label {
+    display: block;
+    padding-top: 1rem;
+    color: rgb(69, 69, 177);
+    font-size: .9rem;
+}
+
+.form input[type="text"],
+.form input[type="password"],
+.form input[type="email"],
+.form input[type="range"] {
+    background-color: #eee9e9;
+    display: block;
+    border: 1px solid #999;
+    border-radius: 5px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 500px;
+}
+
+.form input[type="range"] {
+    margin-top: -0.7rem;
+}
+
+.form input[type="submit"] {
+    border: none;
+    background-color: rgb(201, 201, 254);
+    color: rgb(64, 64, 82);
+    border-radius: 5px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 450px;
+    margin: 2rem 2% 2rem 2%;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+.form input:required {
+    border-right: 15px solid red;
+}
+
+.form input:required:valid {
+    border-right: 15px solid green;
+
+}
+
+#rate {
+    font-size: 30px;
+    text-align: right;
+    width: 100%;
+    max-width: 500px;
+}
+
+#rangevalue {
+    color: rgb(240, 88, 88);
+    font-size: 40px;
+}
+
+.form h3 {
+    font-size: 40px;
+    padding: 10px;
+}
