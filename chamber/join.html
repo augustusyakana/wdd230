@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pohnpei Technology Chamber of Commerce home page">
+    <meta name="author" content="Augustus Yuki Yakana">
+    <meta property="og:title" content="Pohnpei Technology Chamber of Commerce | Home">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.pohnpei-adventure.com/wp-content/uploads/wp-1621753453376.jpg">
+    <meta property="og:url" content="https://augustusyakana.github.io/wdd230/chamber/">
+    <meta property="og:description" content="Pohnpei Chamber of Commerce for Technology home page.">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dynalight&family=Hedvig+Letters+Serif:opsz@12..24&family=Montserrat:ital@1&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/icon.png">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <title>Pohnpei Technology Chamber of Commerce | Home</title>
+</head>
+
+<body>
+    <header>
+        <section id="header-panel">
+            <a id="logo" href="index.html"><img src="images/ptcc_logo.webp" alt="ptcc logo"></a>
+            <a id="menu-btn" href="#"></a>
+            <nav id="small-nav">
+                <a href="index.html">Home</a>
+                <a href="discover.html">Discover</a>
+                <a href="#">Directory</a>
+                <a href="#">Membership</a>
+                <button>Sign In</button>
+                <div id="mode">🌙</div>
+            </nav>
+        </section>
+    </header>
+    <main id="join">
+        <form method="get" action="thankyou.html" class="join-form">
+            <fieldset>
+                <legend>Sign Up</legend>
+                <label>First Name <input type="text" name="fname" id="fname" required></label>
+                <label>Last Name <input type="text" name="lname" id="lname" required></label>
+                <label>Title <input type="text" name="title" id="title" pattern="[A-Za-z0-9].{7,}" required></label>
+                <label>Email <input type="email" name="email" id="email" placeholder="someone@email.com"
+                        required></label>
+                <label>Phone Number <input type="tel" name="tel" id="tel" required></label>
+                <label>Description of Organization <textarea name="description" id="description" cols="30"
+                        rows="10"></textarea></label>
+            </fieldset>
+            <fieldset>
+                <legend>Membership</legend>
+                <label><input type="radio" name="membership" value="nonprofit"> NP Member</label>
+                <label><input type="radio" name="membership" value="bronze"> Bronze Member</label>
+                <label><input type="radio" name="membership" value="silver"> Silver Member</label>
+                <label><input type="radio" name="membership" value="gold"> Gold Member</label>
+                <p> -- See membership information below ⬇️</p>
+            </fieldset>
+
+            <input type="hidden" name="date" id="date">
+
+            <input id="inputsub" type="submit" value="Sign Up">
+        </form>
+        <table>
+            <caption>Membership features</caption>
+            <thead class="head">
+                <tr>
+                    <td colspan="8">PTCC Membership Info</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th></th>
+                    <th>NP Member</th>
+                    <th>Bronze Member</th>
+                    <th>Silver Member</th>
+                    <th>Gold Member</th>
+                </tr>
+                <tr>
+                    <th>Annual Fee</th>
+                    <td>$0</td>
+                    <td>$500</td>
+                    <td>$1000</td>
+                    <td>$2000</td>
+                </tr>
+                <tr>
+                    <th>Grant Eligibility</th>
+                    <td>✅</td>
+                    <td>✅</td>
+                    <td>✅</td>
+                    <td>✅</td>
+                </tr>
+                <tr>
+                    <th>Networking Access</th>
+                    <td>✅</td>
+                    <td>✅</td>
+                    <td>✅</td>
+                    <td>✅</td>
+                </tr>
+                <tr>
+                    <th>Industry Research Access</th>
+                    <td>❌</td>
+                    <td>✅</td>
+                    <td>✅</td>
+                    <td>✅</td>
+                </tr>
+                <tr>
+                    <th>Access to Specialized Training</th>
+                    <td>❌</td>
+                    <td>Limited Access</td>
+                    <td>✅</td>
+                    <td>✅</td>
+                </tr>
+                <tr>
+                    <th>Dedicated Accnt Manager</th>
+                    <td>❌</td>
+                    <td>❌</td>
+                    <td>❌</td>
+                    <td>✅</td>
+                </tr>
+                <tr>
+                    <th>Exclusive Access to Premium Events</th>
+                    <td>❌</td>
+                    <td>❌</td>
+                    <td>❌</td>
+                    <td>✅</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <div id="contact">
+            <img src="images/ptcc_logo.webp" alt="ptcc logo">
+            <p><u>Email:</u> customercare@ptcc.com</p>
+            <p><u>Tel:</u> (691) 320 - 1234</p>
+            <p><u>Address:</u> P.O Box 691 <br>Kolonia, Pohnpei <br>FM 96941</p>
+        </div>
+        <div id="copyright-info">
+            <p>&copy<span id="copyright-year"></span> Augustus Yakana <br>WDD-230 Chamber Project</b></p>
+            <p id="last-modified"></p>
+        </div>
+    </footer>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/date.js"></script>
+</body>
+
+</html>
