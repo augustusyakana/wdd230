@@ -1,0 +1,40 @@
+{
+    "wardInformation": {
+        "familyName": "Yakana",
+        "moveInDate": "2010-10-21",
+        "numberOfPeople": "6",
+        "visitedByBishopric": true,
+        "familyMembers": [
+            {
+                "name": "Augustus Yuki Yakana",
+                "gender": "Male",
+                "birthdate": "1995-11-09"
+            }
+            {
+                "name": "Whyme Conrad Yakana",
+                "gender": "Female",
+                "birthdate": "1995-06-29"
+            }
+            {
+                "name": "Princeton Yakana",
+                "gender": "Male",
+                "birthdate": "2013-12-06"
+            }
+            {
+                "name": "Yuurijah Kimokoa Oshen Yakana",
+                "gender": "Male",
+                "birthdate": "2016-04-10"
+            }
+            {
+                "name": "Zayne Legend O'Shae Yakana",
+                "gender": "Male",
+                "birthdate": "2019-02-19"
+            }
+            {
+                "name": "Aurora Miyuki Rose Yakana",
+                "gender": "Female",
+                "birthdate": "2019-12-19"
+            }
+        ]
+    }
+}
