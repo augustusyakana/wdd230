@@ -1,0 +1,36 @@
+{
+    "members": [
+        {
+            "firstname": "Augustus",
+            "lastname": "Yakana",
+            "position": "President & CEO",
+            "phone": "691-926-8462",
+            "email": "augustus@ptcc.com",
+            "photo": "images/augustus.webp"
+        },
+        {
+            "firstname": "Einstein",
+            "lastname": "Roby",
+            "position": "Executive Director",
+            "phone": "691-925-2468",
+            "email": "einstein@ptcc.com",
+            "photo": "images/einstein.webp"
+        },
+        {
+            "firstname": "Artson",
+            "lastname": "Hadley",
+            "position": "Chief Of Operations",
+            "phone": "691-924-6482",
+            "email": "artson@ptcc.com",
+            "photo": "images/arts.webp"
+        },
+        {
+            "firstname": "Whyme",
+            "lastname": "Yakana",
+            "position": "Chief Financial Officer",
+            "phone": "691-921-2864",
+            "email": "whyme@ptcc.com",
+            "photo": "images/whyme.webp"
+        }
+    ]
+}
