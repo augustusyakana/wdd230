@@ -4,33 +4,78 @@
             "firstname": "Augustus",
             "lastname": "Yakana",
             "position": "President & CEO",
+            "department": "Executive",
+            "company": "PYZA Technologies",
             "phone": "691-926-8462",
             "email": "augustus@ptcc.com",
+            "membership": "Gold",
             "photo": "images/augustus.webp"
         },
         {
             "firstname": "Einstein",
             "lastname": "Roby",
             "position": "Executive Director",
+            "department": "Executive",
+            "company": "Roby Softwares",
             "phone": "691-925-2468",
             "email": "einstein@ptcc.com",
+            "membership": "Gold",
             "photo": "images/einstein.webp"
         },
         {
             "firstname": "Artson",
             "lastname": "Hadley",
             "position": "Chief Of Operations",
+            "department": "Operations",
+            "company": "Hadley Web Masters",
             "phone": "691-924-6482",
             "email": "artson@ptcc.com",
+            "membership": "Silver",
             "photo": "images/arts.webp"
         },
         {
             "firstname": "Whyme",
             "lastname": "Yakana",
             "position": "Chief Financial Officer",
+            "department": "Finance",
+            "company": "PYZA Technologies",
             "phone": "691-921-2864",
             "email": "whyme@ptcc.com",
+            "membership": "Silver",
             "photo": "images/whyme.webp"
+        },
+        {
+            "firstname": "Esau Jacob",
+            "lastname": "Yakana",
+            "position": "Vice President of Accounting",
+            "department": "Finance",
+            "company": "Yakana Corporations",
+            "phone": "691-922-2400",
+            "email": "esau@ptcc.com",
+            "membership": "Gold",
+            "photo": "images/esau.webp"
+        },
+        {
+            "firstname": "Leevae",
+            "lastname": "Molens",
+            "position": "Office Manager",
+            "department": "Operations",
+            "company": "Legacy Inc.",
+            "phone": "691-920-2238",
+            "email": "leevae@ptcc.com",
+            "membership": "Bronze",
+            "photo": "images/leevae.webp"
+        },
+        {
+            "firstname": "Jason",
+            "lastname": "Lainos",
+            "position": "Vice President of Communications",
+            "department": "Communcations",
+            "company": "Lainos Software Company",
+            "phone": "691-923-2691",
+            "email": "jason@ptcc.com",
+            "membership": "Bronze",
+            "photo": "images/jason.webp"
         }
     ]
 }
