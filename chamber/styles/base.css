@@ -643,10 +643,20 @@ footer {
 
 #buttons {
     text-align: center;
-    width: 100px;
+    width: 300px;
     margin: 0 auto;
 
     margin-bottom: 20px;
+
+}
+
+#buttons button {
+    padding: .3rem;
+    width: 80px;
+    border: none;
+    border-radius: 6px;
+    background-color: #00a7ee;
+    box-shadow: 5px 5px 8px black;
 }
 
 .members .memberCard {
