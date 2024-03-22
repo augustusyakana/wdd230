@@ -630,3 +630,18 @@ footer {
     color: rgb(39, 38, 38);
     font-size: 18px;
 }
+
+#directory {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#directory #members {
+    border: 2px solid black;
+}
+
+#members .card {
+    height: 80px;
+}

@@ -8,6 +8,7 @@
             "company": "PYZA Technologies",
             "phone": "691-926-8462",
             "email": "augustus@ptcc.com",
+            "companyEmail": "info@pyzatech.com",
             "membership": "Gold",
             "photo": "images/augustus.webp"
         },
@@ -19,6 +20,7 @@
             "company": "Roby Softwares",
             "phone": "691-925-2468",
             "email": "einstein@ptcc.com",
+            "companyEmail": "customercare@robysoftwares.com",
             "membership": "Gold",
             "photo": "images/eins.webp"
         },
@@ -30,6 +32,7 @@
             "company": "Hadley Web Masters",
             "phone": "691-924-6482",
             "email": "artson@ptcc.com",
+            "companyEmail": "info@hwebmasters.com",
             "membership": "Silver",
             "photo": "images/arts.webp"
         },
@@ -41,6 +44,7 @@
             "company": "PYZA Web Services",
             "phone": "691-921-2864",
             "email": "whyme@ptcc.com",
+            "companyEmail": "info@pyzawebs.com",
             "membership": "Silver",
             "photo": "images/why.webp"
         },
@@ -52,6 +56,7 @@
             "company": "Yakana Corporations",
             "phone": "691-922-2400",
             "email": "esau@ptcc.com",
+            "companyEmail": "help@yakanaco.com",
             "membership": "Gold",
             "photo": "images/esau.webp"
         },
@@ -63,6 +68,7 @@
             "company": "Legacy Inc.",
             "phone": "691-920-2238",
             "email": "leevae@ptcc.com",
+            "companyEmail": "info@legacyinc.com",
             "membership": "Bronze",
             "photo": "images/leevae.webp"
         },
@@ -74,6 +80,7 @@
             "company": "Lainos Software Company",
             "phone": "691-923-2691",
             "email": "jason@ptcc.com",
+            "companyEmail": "customercare@lsc.com",
             "membership": "Bronze",
             "photo": "images/jason.webp"
         }
