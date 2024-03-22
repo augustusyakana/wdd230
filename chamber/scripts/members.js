@@ -60,6 +60,8 @@ function displayMembers(members) {
             card.append(membership);
             card.append(name)
 
+            membersSection.appendChild(card);
+
         }
     })
 }
