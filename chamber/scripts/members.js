@@ -1,9 +1,12 @@
 
-const membersSection = document.querySelector('#members');
+const membersSection = document.querySelector('.members');
+
 const gridButton = document.querySelector('#gridButton');
 const listButton = document.querySelector('#listButton');
 
 const membersURL = "https://augustusyakana.github.io/wdd230/chamber/data/members.json";
+
+let results = '';
 
 async function getMembers() {
     const response = await fetch(membersURL);
@@ -11,15 +14,27 @@ async function getMembers() {
     if (response.ok) {
         const data = await response.json();
         // console.log(data.members);
-        displayMembers(data.members);
+        displayMembers(data.members)
+        results = data.members;
     }
 }
+
+gridButton.addEventListener('click', () => {
+    membersSection.classList.remove('members')
+    membersSection.classList.add('grid');
+
+})
+
+listButton.addEventListener('click', () => {
+    membersSection.classList.remove('grid');
+    membersSection.classList.add('members')
+})
 
 function displayMembers(members) {
 
     members.forEach((member) => {
         const card = document.createElement('div');
-        card.classList.add('card');
+        card.classList.add('memberCard');
 
         const contactInfo = document.createElement('div');
         contactInfo.classList.add('contactInfo');
@@ -38,40 +53,32 @@ function displayMembers(members) {
         let membership = document.createElement('p').textContent = `${member.membership} Member`;
         let email = document.createElement('p').textContent = `Email: ${member.email}`;
         let phone = document.createElement('p').textContent = `Phone: ${member.phone}`;
-        let companyEmail = document.createElement('p').textContent = `Company Email: ${member.companyEmail}`;
+        let companyEmail = document.createElement('p').textContent = `${member.companyEmail}`;
 
-        personalInfo.append(name);
-        contactInfo.innerHTML = `${phone}<br>${email}`;
-        companyInfo.innerHTML = `${company}<br>${companyEmail}`;
-        membershipInfo.innerHTML = `${position}<br>${department}<br>${membership}`;
+        if (membersSection.classList.contains('grid')) {
 
-        if (membersSection.classList !== 'grid') {
+            card.append(company);
+            card.append(membership);
+            card.append(companyEmail);
+            card.append(name);
+            membersSection.append(card);
+
+        } else {
+
+            personalInfo.append(name);
+            contactInfo.innerHTML = `${phone}<br>${email}`;
+            companyInfo.innerHTML = `${company}<br>${companyEmail}`;
+            membershipInfo.innerHTML = `${position}<br>${department}<br>${membership}`;
 
             card.append(companyInfo);
             card.append(membershipInfo);
             card.append(personalInfo);
             card.append(contactInfo);
-            card.append(ceoImg);
-
-        } else {
-
-            card.append(companyInfo);
-            card.append(membership);
-            card.append(name)
-
+            membersSection.append(card);
         }
 
-        membersSection.appendChild(card);
+
     })
 }
-
-gridButton.addEventListener('click', () => {
-    membersSection.classList.add('grid');
-
-})
-
-listButton.addEventListener('click', () => {
-    membersSection.classList.remove('grid');
-})
 
 getMembers();

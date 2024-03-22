@@ -632,38 +632,56 @@ footer {
 }
 
 #directory {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
+    display: block;
 }
 
-#members .card {
-    height: 1.8;
+#directory h1 {
+
+    text-align: center;
+    width: 100%;
+}
+
+#buttons {
+    text-align: center;
+    width: 100px;
+    margin: 0 auto;
+
+    margin-bottom: 20px;
+}
+
+.members .memberCard {
+    height: 100px;
     display: grid;
-    grid-template-columns: 1.5fr 1.8fr 1fr 1fr 1fr;
+    grid-template-columns: 1.5fr 1.8fr 1fr 1fr;
+
+}
+
+.memberCard {
+    display: flex;
     margin-bottom: 5px;
     border-radius: 0%;
-
+    padding: 10px;
     background-color: #00a7ee;
     border: 1px solid white;
 }
 
-#members .contactInfo,
-#members .personalInfo,
-#members .companyInfo,
-#members .memberInfo {
+.members .contactInfo,
+.members .personalInfo,
+.members .companyInfo,
+.members .memberInfo {
     text-align: left;
     font-size: 14px;
 
 }
 
-#members .companyInfo {
-    text-wrap: wrap;
-}
-
-.grid {
+#directory .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.grid .memberCard {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
