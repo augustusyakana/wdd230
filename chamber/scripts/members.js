@@ -53,16 +53,15 @@ function displayMembers(members) {
             card.append(contactInfo);
             card.append(ceoImg);
 
-            membersSection.appendChild(card);
         } else {
 
             card.append(companyInfo);
             card.append(membership);
             card.append(name)
 
-            membersSection.appendChild(card);
-
         }
+
+        membersSection.appendChild(card);
     })
 }
 
