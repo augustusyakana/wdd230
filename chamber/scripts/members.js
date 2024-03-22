@@ -45,18 +45,32 @@ function displayMembers(members) {
         companyInfo.innerHTML = `${company}<br>${companyEmail}`;
         membershipInfo.innerHTML = `${position}<br>${department}<br>${membership}`;
 
-        card.append(companyInfo);
-        card.append(membershipInfo);
-        card.append(personalInfo);
-        card.append(contactInfo);
-        card.append(ceoImg);
+        if (membersSection.classList !== 'grid') {
 
-        membersSection.appendChild(card);
+            card.append(companyInfo);
+            card.append(membershipInfo);
+            card.append(personalInfo);
+            card.append(contactInfo);
+            card.append(ceoImg);
+
+            membersSection.appendChild(card);
+        } else {
+
+            card.append(companyInfo);
+            card.append(membership);
+            card.append(name)
+
+        }
     })
 }
 
 gridButton.addEventListener('click', () => {
+    membersSection.classList.add('grid');
 
+})
+
+listButton.addEventListener('click', () => {
+    membersSection.classList.remove('grid');
 })
 
 getMembers();

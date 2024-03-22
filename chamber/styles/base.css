@@ -641,7 +641,6 @@ footer {
 
 #members .card {
     height: 1.8;
-    width: 100%;
     display: grid;
     grid-template-columns: 1.5fr 1.8fr 1fr 1fr 1fr;
     margin-bottom: 5px;
@@ -662,4 +661,9 @@ footer {
 
 #members .companyInfo {
     text-wrap: wrap;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
