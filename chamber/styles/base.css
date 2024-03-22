@@ -636,12 +636,30 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-#directory #members {
-    border: 2px solid black;
+    gap: 30px;
 }
 
 #members .card {
-    height: 80px;
+    height: 1.8;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1.5fr 1.8fr 1fr 1fr 1fr;
+    margin-bottom: 5px;
+    border-radius: 0%;
+
+    background-color: #00a7ee;
+    border: 1px solid white;
+}
+
+#members .contactInfo,
+#members .personalInfo,
+#members .companyInfo,
+#members .memberInfo {
+    text-align: left;
+    font-size: 14px;
+
+}
+
+#members .companyInfo {
+    text-wrap: wrap;
 }

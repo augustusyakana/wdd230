@@ -1,5 +1,7 @@
 
 const membersSection = document.querySelector('#members');
+const gridButton = document.querySelector('#gridButton');
+const listButton = document.querySelector('#listButton');
 
 const membersURL = "https://augustusyakana.github.io/wdd230/chamber/data/members.json";
 
@@ -29,7 +31,7 @@ function displayMembers(members) {
         personalInfo.classList.add('personalInfo');
 
         let company = document.createElement('h3').textContent = member.company;
-        let name = document.createElement('p').textContent = `${member.firstname} ${member.lastname}`;
+        let name = document.createElement('p').textContent = `CEO: ${member.firstname} ${member.lastname}`;
         let position = document.createElement('p').textContent = `Chamber Position: ${member.position}`;
         let department = document.createElement('p').textContent = `Chamber Dept: ${member.department}`;
         let ceoImg = document.createElement('img').setAttribute('src', member.photo);
@@ -38,22 +40,23 @@ function displayMembers(members) {
         let phone = document.createElement('p').textContent = `Phone: ${member.phone}`;
         let companyEmail = document.createElement('p').textContent = `Company Email: ${member.companyEmail}`;
 
-        personalInfo.appendChild(name);
-        contactInfo.appendChild(phone);
-        contactInfo.appendChild(email);
-        companyInfo.appendChild(company);
-        companyInfo.appendChild(companyEmail);
-        membershipInfo.appendChild(position);
-        membershipInfo.appendChild(department);
-        membershipInfo.appendChild(membership);
+        personalInfo.append(name);
+        contactInfo.innerHTML = `${phone}<br>${email}`;
+        companyInfo.innerHTML = `${company}<br>${companyEmail}`;
+        membershipInfo.innerHTML = `${position}<br>${department}<br>${membership}`;
 
-        card.appendChild(companyInfo);
-        card.appendChild(membershipInfo);
-        card.appendChild(personalInfo);
-        card.appendChild(ceoImg);
+        card.append(companyInfo);
+        card.append(membershipInfo);
+        card.append(personalInfo);
+        card.append(contactInfo);
+        card.append(ceoImg);
 
         membersSection.appendChild(card);
     })
 }
+
+gridButton.addEventListener('click', () => {
+
+})
 
 getMembers();
