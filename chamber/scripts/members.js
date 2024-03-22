@@ -20,9 +20,13 @@ function displayMembers(members) {
         card.classList.add('card');
 
         const contactInfo = document.createElement('div');
+        contactInfo.classList.add('contactInfo');
         const companyInfo = document.createElement('div');
+        companyInfo.classList.add('companyInfo');
         const membershipInfo = document.createElement('div');
+        membershipInfo.classList.add('memberInfo');
         const personalInfo = document.createElement('div');
+        personalInfo.classList.add('personalInfo');
 
         let company = document.createElement('h3').textContent = member.company;
         let name = document.createElement('p').textContent = `${member.firstname} ${member.lastname}`;
