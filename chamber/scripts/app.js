@@ -13,13 +13,16 @@ const footer = document.querySelector('footer');
 const gallery = document.querySelector('#gallery');
 const memberPara = document.querySelector('#become-member')
 
+
 // variables for days visited
 const lastVisit = Number(window.localStorage.getItem('last-visit')) || Date.now();
 const visitsElement = document.getElementById('last-visited');
 const dateToday = new Date();
 const msToDay = 86400000;
 const timeSinceLast = (Date.now() - lastVisit) / msToDay;
-console.log(timeSinceLast);
+
+
+
 
 if (lastVisit === dateToday.getTime()) {
     visitsElement.textContent = 'Welcome! Let us know if you have any questions.';

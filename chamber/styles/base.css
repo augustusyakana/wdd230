@@ -15,6 +15,8 @@
 
 }
 
+/* ❌ */
+
 * {
     box-sizing: border-box;
 }
@@ -251,6 +253,12 @@ header button:hover {
     left: 50%;
     margin: 0 auto;
     margin-left: -50px;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+    font-family: var(--ParaFont);
 }
 
 main {
@@ -699,4 +707,31 @@ footer {
 .grid .contactInfo,
 .grid .memberInfo:nth-child(2):first-child {
     display: none;
+}
+
+#announcement {
+    height: 50px;
+    background-color: rgb(229, 121, 121);
+    color: white;
+    display: none;
+    border-bottom: 2px solid white;
+    align-items: center;
+    text-align: center;
+    font-family: var(--ParaFont);
+}
+
+#exitBtn {
+    cursor: pointer;
+    /* border: 2px solid red; */
+
+    width: 20px;
+    height: max-content;
+    position: relative;
+    padding-right: 40px;
+
+}
+
+.showAnnouncement {
+    display: flex;
+    justify-content: space-between;
 }
