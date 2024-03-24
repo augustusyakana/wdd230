@@ -9,7 +9,7 @@ const windGust = document.querySelector('#gust');
 // Longitude: 49.75˚N
 // Latitude: 6.64˚E
 
-const url = 'https://api.openweathermap.org/data/2.5/weather?lat=49.75&lon=6.64&appid=4bf5dd2b2d2f31a34c56032160442c9d';
+const url = 'https://api.openweathermap.org/data/2.5/weather?lat=6.96&lon=158.21&units=imperial&appid=4bf5dd2b2d2f31a34c56032160442c9d';
 
 async function apiFetch() {
     try {
