@@ -14,7 +14,7 @@ async function getMembers() {
     if (response.ok) {
         const data = await response.json();
         // console.log(data.members);
-        displayMembers(data.members)
+        displayMembers(data.members);
         results = data.members;
     }
 }
@@ -22,7 +22,6 @@ async function getMembers() {
 gridButton.addEventListener('click', () => {
     membersSection.classList.remove('members')
     membersSection.classList.add('grid');
-
 })
 
 listButton.addEventListener('click', () => {
@@ -33,6 +32,7 @@ listButton.addEventListener('click', () => {
 function displayMembers(members) {
 
     members.forEach((member) => {
+
         const card = document.createElement('div');
         card.classList.add('memberCard');
 
@@ -55,28 +55,16 @@ function displayMembers(members) {
         let phone = document.createElement('p').textContent = `Phone: ${member.phone}`;
         let companyEmail = document.createElement('p').textContent = `${member.companyEmail}`;
 
-        if (membersSection.classList.contains('grid')) {
+        personalInfo.append(name);
+        contactInfo.innerHTML = `${phone}<br>${email}`;
+        companyInfo.innerHTML = `${company}<br>${companyEmail}`;
+        membershipInfo.innerHTML = `${position}<br>${department}<br>${membership}`;
 
-            card.append(company);
-            card.append(membership);
-            card.append(companyEmail);
-            card.append(name);
-            membersSection.append(card);
-
-        } else {
-
-            personalInfo.append(name);
-            contactInfo.innerHTML = `${phone}<br>${email}`;
-            companyInfo.innerHTML = `${company}<br>${companyEmail}`;
-            membershipInfo.innerHTML = `${position}<br>${department}<br>${membership}`;
-
-            card.append(companyInfo);
-            card.append(membershipInfo);
-            card.append(personalInfo);
-            card.append(contactInfo);
-            membersSection.append(card);
-        }
-
+        card.append(companyInfo);
+        card.append(membershipInfo);
+        card.append(personalInfo);
+        card.append(contactInfo);
+        membersSection.append(card);
 
     })
 }

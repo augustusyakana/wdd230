@@ -695,3 +695,8 @@ footer {
     align-items: center;
     text-align: center;
 }
+
+.grid .contactInfo,
+.grid .memberInfo:nth-child(2):first-child {
+    display: none;
+}
