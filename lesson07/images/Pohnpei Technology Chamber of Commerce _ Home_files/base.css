@@ -711,23 +711,29 @@ footer {
     display: none;
 }
 
-.invitation {
+#announcement {
     height: 50px;
     background-color: rgb(229, 121, 121);
     color: white;
-    display: flex;
+    display: none;
     border-bottom: 2px solid white;
     align-items: center;
     text-align: center;
     font-family: var(--ParaFont);
 }
 
-.exitBtn {
+#exitBtn {
     cursor: pointer;
     /* border: 2px solid red; */
 
     width: 20px;
     height: max-content;
     position: relative;
+    padding-right: 40px;
 
+}
+
+.showAnnouncement {
+    display: flex;
+    justify-content: space-between;
 }

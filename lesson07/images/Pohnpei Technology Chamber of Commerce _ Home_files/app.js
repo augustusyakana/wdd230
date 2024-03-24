@@ -11,12 +11,13 @@ const footer = document.querySelector('footer');
 
 // variables for days visited
 const lastVisit = Number(window.localStorage.getItem('last-visit')) || Date.now();
+const visitsElement = document.getElementById('last-visited');
 const dateToday = new Date();
 const msToDay = 86400000;
 const timeSinceLast = (Date.now() - lastVisit) / msToDay;
 
 
-const visitsElement = document.querySelector('#last-visited');
+
 
 if (lastVisit === dateToday.getTime()) {
     visitsElement.textContent = 'Welcome! Let us know if you have any questions.';
@@ -42,7 +43,7 @@ menuBtn.addEventListener('click', () => {
     menuBtn.classList.toggle('show');
 })
 
-const lastModified = document.lastModified;
+const lastModified = document.lastModified();
 const lastModifiedElement = document.querySelector('#last-modified');
 const copyrightYear = document.querySelector('#copyright-year');
 const year = new Date(lastModified).getFullYear();
@@ -81,5 +82,4 @@ modeBtn.addEventListener('click', () => {
     }
 })
 
-const announcement = document.querySelector('.announcement');
-console.log(announcement);
+
